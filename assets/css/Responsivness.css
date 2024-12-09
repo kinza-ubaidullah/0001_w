@@ -1,0 +1,242 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px !important;
+    }
+}
+/* Navigation */
+@media screen and (max-width: 991px) {
+    .navbar {
+        padding-left: 0;
+        padding-right: 0;
+        background: #272727;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .nav-scroll {
+        background: #272727;
+    }
+
+    .logo-wrapper {
+        float: left;
+        padding: 15px;
+    }
+
+    .logo-wrapper .logo h2 {
+        display: none;
+    }
+
+    .nav-scroll .logo-wrapper {
+        padding: 15px;
+        background-color: transparent;
+    }
+
+    .nav-scroll .logo-img {
+        width: 75px;
+    }
+
+    .navbar .logo {
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .nav-scroll .logo .logo-img {
+        margin-bottom: 0px;
+    }
+
+    .navbar button {
+        margin-right: 0px;
+        outline: none !important;
+        background: transparent;
+        margin-top: 10px;
+        border: none;
+    }
+
+    .navbar button:hover {
+        background: transparent;
+    }
+
+    .navbar button:active,
+    .navbar button:focus,
+    .navbar button:hover {
+        background: transparent;
+        outline: none;
+        color: transparent !important;
+    }
+
+    .navbar .nav-link {
+        margin: 0px auto !important;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        color: #fff;
+    }
+
+    .nav-scroll .navbar-collapse .nav-link {
+        color: #fff !important;
+    }
+
+    .nav-scroll .navbar-collapse .active {
+        color: #b19777 !important;
+    }
+    .bg-fixed {
+        background-attachment: scroll !important;
+    }
+    .header {
+        background-attachment: scroll !important;
+        background-position: 50% 0% !important;
+    }
+    .hero-corner,
+    .hero-corner2,
+    .hero-corner3,
+    .hero-corner4 {
+        display: none;
+    }
+    .header .caption h1 {
+        font-size: 40px;
+    }
+}
+
+/* slider style */
+@media screen and (max-width: 768px) {
+    .owl-nav {
+        display: none;
+    }
+
+    .left-panel {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .owl-prev {
+        left: 7rem;
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .owl-next {
+        position: absolute;
+        bottom: 0px;
+        right: 50.5rem;
+    }
+}
+
+@media (max-width: 1259px) {
+    .left-panel {
+        width: 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    .left-panel {
+        width: 50px;
+    }
+    .testimonial-box{
+        padding: 35px 20px;
+        margin-bottom: 90px;
+    }
+    /* careers */
+    .position{
+        flex-direction: column;
+        -webkit-box-pack: initial;
+        -webkit-justify-content: initial;
+        -ms-flex-pack: initial;
+        justify-content: initial;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+    .position-title {
+        -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+    .position-location {
+        margin-top: 15px;
+        -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+    .position-time {
+        margin-top: 15px;
+        -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+    .position-icon {
+        display: none;
+    }
+}
+
+
+/* projects-prev-next */
+@media (max-width: 576px) {
+    .projects-prev-next {
+        text-align: center;
+    }
+
+    .projects-prev-next-left {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .team-details .content .info-list li {
+        width: 100%;
+    }
+    .team-details .content .team-details-info {
+        position: relative;
+        padding: 0 0 8rem 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero .intro h3 {
+        font-size: 28px;
+    }
+    .hero .intro h4 {
+        font-size: 20px;
+    }
+    .header .caption h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+        letter-spacing: 10px;
+        line-height: 1.35em;
+    }
+    .header .caption p {
+        font-size: 15px;
+        margin-right: 10px;
+    }
+    .header .caption .butn-light {
+        margin-right: 10px;
+    }
+
+    .portfolio .filtering span {
+        margin-bottom: 10px;
+    }
+    .bauen-blog .item .con h5,
+    .bauen-blog .item .con h5 a {
+        font-size: 20px;
+    }
+    .bauen-comment-section h3 span {
+        margin-left: 0px;
+    }
+    .main-footer .sub-footer p.right {
+        text-align: left;
+    }
+    .main-footer .abot .social-icon {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    .footer .logo {
+        padding: 0;
+        width: auto;
+        margin: 0px 0;
+    }
+}
