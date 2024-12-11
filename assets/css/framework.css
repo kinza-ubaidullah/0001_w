@@ -5,6 +5,8 @@ body{
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
+    overflow: hidden;
+    width: 100%;
 }
 *{
     margin: 0;
@@ -23,6 +25,7 @@ body{
     overflow-x: hidden;
     background: #272727;
 }
+
 p{
     font-family: 'Didact Gothic', sans-serif;
     font-size: 16px;
@@ -43,6 +46,7 @@ h6{
     margin: 0 0 20px 0;
 }
 img{
+    max-width: 100%;
     width: 100%;
     height: auto;
     transition: all 0.5s;
@@ -610,5 +614,9 @@ blockquote cite:before{
 }
 .gallery_box:hover .galler_img > img{
     transform: scale(1.05);
+}
+.owl-carousel .item {
+    width: 100% !important;
+    box-sizing: border-box;
 }
 

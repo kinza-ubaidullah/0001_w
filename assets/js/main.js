@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 window.scrollY >= sectionTop &&
                 window.scrollY < sectionTop + sectionHeight
             ) {
-                currentSection = section.getAttribute('id'); 
+                currentSection = section.getAttribute('id');
             }
         });
 
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
         navLinks.forEach((link) => {
             link.classList.remove('active');
             if (
-                link.getAttribute('href').includes(currentSection) || 
+                link.getAttribute('href').includes(currentSection) ||
                 (!currentSection && link.getAttribute('href') === '#home')
             ) {
                 link.classList.add('active');
@@ -162,13 +162,13 @@ $(document).ready(function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     const galleryContainer = document.getElementById('gallery-container');
-
-    // Initialize LightGallery
-    lightGallery(galleryContainer, {
+    if (galleryContainer) {
+      lightGallery(galleryContainer, {
         selector: 'a',
         download: true,
         thumbnail: true,
-    });
+      });
+    }
 });
 
 // testimonial section
@@ -279,31 +279,28 @@ function validateForm() {
 }
 
 
-
-
-
-
-
-
-
-
 // MagnificPopup
-$(".img-zoom").magnificPopup({
-    type: "image"
-    , closeOnContentClick: !0
-    , mainClass: "mfp-fade"
-    , gallery: {
-        enabled: !0
-        , navigateByImgClick: !0
-        , preload: [0, 1]
-    }
-})
-$('.magnific-youtube, .magnific-vimeo, .magnific-custom').magnificPopup({
-    disableOn: 700
-    , type: 'iframe'
-    , mainClass: 'mfp-fade'
-    , removalDelay: 300
-    , preloader: false
-    , fixedContentPos: false
+
+$(document).ready(function () {
+    $(".img-zoom").magnificPopup({
+        type: "image",
+        closeOnContentClick: true,
+        mainClass: "mfp-fade",
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1],
+        },
+    });
+
+    $('.magnific-youtube, .magnific-vimeo, .magnific-custom').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 300,
+        preloader: false,
+        fixedContentPos: false,
+    });
 });
+
 

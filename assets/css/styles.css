@@ -14,8 +14,10 @@
 
 }
 #preloader-status {
-    display: table-cell;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 .preloader-position {
     position: relative;
@@ -301,6 +303,10 @@
 
 .header .caption .o-hidden {
     display: inline-block;
+}
+.owl-carousel .item {
+    width: 100%;
+    /* height: 100vh; */
 }
 
 .item.bg-img::before {

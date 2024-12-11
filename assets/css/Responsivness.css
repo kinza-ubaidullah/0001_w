@@ -98,6 +98,50 @@
 }
 
 /* slider style */
+@media screen and (max-width: 767px) {
+    .hero .intro h3 {
+        font-size: 28px;
+    }
+    .hero .intro h4 {
+        font-size: 20px;
+    }
+    .header .caption h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+        letter-spacing: 10px;
+        line-height: 1.35em;
+    }
+    .header .caption p {
+        font-size: 15px;
+        margin-right: 10px;
+    }
+    .header .caption .butn-light {
+        margin-right: 10px;
+    }
+
+    .portfolio .filtering span {
+        margin-bottom: 10px;
+    }
+    .bauen-blog .item .con h5,
+    .bauen-blog .item .con h5 a {
+        font-size: 20px;
+    }
+    .bauen-comment-section h3 span {
+        margin-left: 0px;
+    }
+    .main-footer .sub-footer p.right {
+        text-align: left;
+    }
+    .main-footer .abot .social-icon {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    .footer .logo {
+        padding: 0;
+        width: auto;
+        margin: 0px 0;
+    }
+}
 @media screen and (max-width: 768px) {
     .owl-nav {
         display: none;
@@ -193,6 +237,21 @@
     .team-details .content .team-details-info {
         position: relative;
         padding: 0 0 8rem 0;
+    }
+    .section-head h4 {
+        font-size: 30px;
+    }
+    .footer {
+        padding: 60px 0;
+    }
+    .text-left {
+        text-align: left;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .text-right {
+        text-align: center;
     }
 }
 
