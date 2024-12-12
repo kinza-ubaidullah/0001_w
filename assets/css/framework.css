@@ -5,7 +5,7 @@ body{
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
-    overflow: hidden;
+    overflow-x: hidden;
     width: 100%;
 }
 *{
@@ -15,6 +15,7 @@ body{
     outline: none;
     list-style: none;
     word-wrap: break-word;
+    /* overflow: hidden; */
 }
 body{
     font-family: 'Didact Gothic', sans-serif;
@@ -22,10 +23,9 @@ body{
     font-weight: 400;
     line-height: 1.75em;
     color: #999;
-    overflow-x: hidden;
+    overflow: hidden;
     background: #272727;
 }
-
 p{
     font-family: 'Didact Gothic', sans-serif;
     font-size: 16px;
@@ -375,11 +375,11 @@ blockquote cite:before{
     border: 1px solid #b19777;
 }
 
-.owl-carousel .owl-nav button.owl-next,
+/* .owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel button.owl-dot {
      outline: none;
-}
+} */
 /* section style */
 .section-padding{
     padding: 90px 0;

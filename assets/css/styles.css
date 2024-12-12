@@ -297,7 +297,7 @@
 .header {
     min-height: 100vh;
     overflow: hidden;
-    /* position: relative; */
+    position: relative;
     /* background-size: contain; */
 }
 
@@ -1665,7 +1665,7 @@
 
 /*new css*/
 
-.banner-slider button.owl-prev:hover, .banner-slider button.owl-next:hover {
+/* .banner-slider button.owl-prev:hover, .banner-slider button.owl-next:hover {
     color: #b19777;
     border: 1px solid #b19777;
     background: none !important;
@@ -1688,6 +1688,6 @@
 
 .banner-slider button.owl-prev{
     left: 10rem;
-}
+} */
 
 /*new css*/

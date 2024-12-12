@@ -153,7 +153,7 @@ $(document).ready(function () {
 
         }
     });
-    console.log("Owl Carousel initialized.");
+    // console.log("Owl Carousel initialized.");
     $('.project-carousel').on('changed.owl.carousel', function (event) {
         console.log('Current Active Dot Index:', event.page.index);
     });
@@ -277,30 +277,5 @@ function validateForm() {
 
     return returnval;
 }
-
-
-// MagnificPopup
-
-$(document).ready(function () {
-    $(".img-zoom").magnificPopup({
-        type: "image",
-        closeOnContentClick: true,
-        mainClass: "mfp-fade",
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0, 1],
-        },
-    });
-
-    $('.magnific-youtube, .magnific-vimeo, .magnific-custom').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 300,
-        preloader: false,
-        fixedContentPos: false,
-    });
-});
 
 
