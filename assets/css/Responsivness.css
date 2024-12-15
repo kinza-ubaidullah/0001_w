@@ -96,7 +96,14 @@
         font-size: 40px;
     }
 }
-
+/* for projects imgs */
+@media screen and (max-width: 336px) {
+    .gallery_box {
+        position: relative;
+        height: 130px;
+        /* padding-top: 10px; */
+    }
+}
 /* slider style */
 @media screen and (max-width: 767px) {
     .hero .intro h3 {
