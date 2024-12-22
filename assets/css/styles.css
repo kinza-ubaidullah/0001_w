@@ -1489,7 +1489,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 0;
-    bottom: -55px;
+    bottom: -85px;
     -webkit-transition: .2s cubic-bezier(.3, .58, .55, 1);
     transition: .2s cubic-bezier(.3, .58, .55, 1);
 }
