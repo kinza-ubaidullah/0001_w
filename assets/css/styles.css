@@ -609,7 +609,7 @@
 }
 
 .projects .item img {
-    transition: all 0.5s;
+    transition: all 0.9s;
     -webkit-transition: all 0.5s;
 }
 
@@ -629,36 +629,6 @@
     background: -webkit-linear-gradient(top, transparent 0, rgba(0, 0, 0, .01) 2%, rgba(0, 0, 0, .75) 90%);
     background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .01) 2%, rgba(0, 0, 0, .75) 90%);
 }
-
-.projects .item .con h6,
-.projects .item .con h6 a {
-    position: relative;
-    color: #b19777;
-    font-size: 13px;
-    font-weight: 400;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-}
-
-.projects .item .con h5,
-.projects .item .con h5 a {
-    color: #fff;
-    position: relative;
-    font-size: 20px;
-    font-weight: 300;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-}
-
-.projects .item .con p {
-    color: #fff;
-    font-size: 20px;
-}
-
 .projects .item .con i {
     color: white;
     font-size: 20px;
@@ -701,8 +671,6 @@
 
 .project-carousel .item {
     width: 100%;
-    background-color: #ccc;
-    padding: 20px;
     text-align: center;
 }
 
