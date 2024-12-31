@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #999;
+    overflow: hidden;
+    background: #272727;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+}
+.navbar .logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-left: 18rem;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #b19777;
+}
+
+.social-icons a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.social-icons a:hover {
+    color: #b19777;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('../imgs/exterior/img45.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(20px);
+    z-index: -1; /* Ensure it stays behind the content */
+    background-size: cover; /* To match the hero background size */
+}
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Animated Images */
+.hero-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.animate-img {
+    position: absolute;
+    max-width: 45%;
+    opacity: 0;
+    animation: fadeInMove 5s infinite;
+}
+
+/* Individual Animations */
+.img1 {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.img2 {
+    top: 50%;
+    right: 10%;
+    animation-delay: 1.5s;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeInMove {
+    0% {
+        transform: translate(30px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+}
+
+
+
+
+/* HERO1================================================================= */
+.hero1 {
+    position: relative;
+    background: url('../imgs/exterior/img46.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* animation: fadeInRotate 4s infinite; */
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+.hero1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(20px);
+    z-index: -1; /* Ensure it stays behind the content */
+    background-size: cover; /* To match the hero background size */
+}
+.hero1-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero1-content h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Animated Images */
+.hero1-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.animateImg {
+    position: absolute;
+    max-width: 45%;
+    opacity: 0;
+    animation: fadeInRotate 5s infinite;
+}
+
+/* Individual Animations */
+.img-1 {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.img-2 {
+    top: 50%;
+    right: 10%;
+    animation-delay: 1.5s;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeInRotate {
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(720deg) scale(0.8);
+        opacity: 0;
+    }
+}
+
+
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 1s ease-in-out;
+}

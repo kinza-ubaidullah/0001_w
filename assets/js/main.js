@@ -279,3 +279,20 @@ function validateForm() {
 }
 
 
+
+
+
+
+
+
+
+const items = document.querySelectorAll(".carousel-item");
+let index = 0;
+
+function showNext() {
+    items[index].style.transform = "translateX(-100%)";
+    index = (index + 1) % items.length;
+    items[index].style.transform = "translateX(0)";
+}
+
+setInterval(showNext, 3000);

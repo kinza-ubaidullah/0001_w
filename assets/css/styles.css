@@ -356,7 +356,25 @@
     padding-right: 14px;
     margin: 0 5px;
 }
-
+/* dropdown styling */
+.dropdown-menu{
+    padding: 10px 5px 0px 5px;
+    text-transform: capitalize;
+    font-weight: 500;
+    background: #272727;
+    border-radius: 34px;
+    font-size: 13px;
+    font-family: 'Didact Gothic', sans-serif;
+}
+.dropdown-menu li a {
+    color: #B19777;
+}
+.dropdown-menu .dropdown-item:hover{
+    background: #b19777;
+    border-radius: 7px;
+    padding: 5px;
+}
+/* dropdown styling */
 /* Slider Styles */
 .slider .owl-item,
 .slider-fade .owl-item {
