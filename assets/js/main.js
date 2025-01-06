@@ -286,13 +286,19 @@ function validateForm() {
 
 
 
-const items = document.querySelectorAll(".carousel-item");
-let index = 0;
+ // Initialize Swiper
+ const swiper = new Swiper('.swiper', {
+    loop: true, // Infinite loop
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 3000, // Auto-slide every 3 seconds
+    },
+  });
 
-function showNext() {
-    items[index].style.transform = "translateX(-100%)";
-    index = (index + 1) % items.length;
-    items[index].style.transform = "translateX(0)";
-}
-
-setInterval(showNext, 3000);

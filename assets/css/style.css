@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 /* General Reset */
 * {
     margin: 0;
@@ -6,7 +7,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Didact Gothic', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -25,10 +26,12 @@ body{
     background: #333;
     color: #fff;
 }
+
 .navbar .logo {
     font-size: 22px;
     font-weight: 700;
 }
+
 .menu {
     list-style: none;
     display: flex;
@@ -75,6 +78,7 @@ body{
     overflow: hidden;
     text-align: center;
 }
+
 .hero::before {
     content: '';
     position: absolute;
@@ -84,13 +88,16 @@ body{
     height: 100%;
     background: inherit;
     filter: blur(20px);
-    z-index: -1; /* Ensure it stays behind the content */
-    background-size: cover; /* To match the hero background size */
+    z-index: -1;
+    /* Ensure it stays behind the content */
+    background-size: cover;
+    /* To match the hero background size */
 }
+
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 .hero-content h2 {
@@ -140,10 +147,12 @@ body{
         transform: translate(30px);
         opacity: 0;
     }
+
     50% {
         transform: translateY(0);
         opacity: 1;
     }
+
     100% {
         transform: translateY(-50px);
         opacity: 0;
@@ -167,6 +176,7 @@ body{
     overflow: hidden;
     text-align: center;
 }
+
 .hero1::before {
     content: '';
     position: absolute;
@@ -176,13 +186,16 @@ body{
     height: 100%;
     background: inherit;
     filter: blur(20px);
-    z-index: -1; /* Ensure it stays behind the content */
-    background-size: cover; /* To match the hero background size */
+    z-index: -1;
+    /* Ensure it stays behind the content */
+    background-size: cover;
+    /* To match the hero background size */
 }
+
 .hero1-content h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 .hero1-content h2 {
@@ -210,7 +223,7 @@ body{
     position: absolute;
     max-width: 45%;
     opacity: 0;
-    animation: fadeInRotate 5s infinite;
+    animation: fadeInScale 5s infinite;
 }
 
 /* Individual Animations */
@@ -227,38 +240,312 @@ body{
 }
 
 /* Keyframes for Animation */
-@keyframes fadeInRotate {
+@keyframes fadeInScale {
     0% {
-        transform: rotate(0deg) scale(1);
+        transform: scale(0.5);
         opacity: 0;
     }
+
     50% {
-        transform: translateY(0);
+        transform: scale(1);
         opacity: 1;
     }
+
     100% {
-        transform: rotate(720deg) scale(0.8);
+        transform: scale(2);
         opacity: 0;
     }
 }
 
 
-
-
-.carousel {
+/* hero 3 ============================= */
+.hero3 {
     position: relative;
-    width: 100%;
+    background: url('../imgs/exterior/img51.jpeg') no-repeat center center/cover;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* animation: fadeInRotate 4s infinite; */
+    color: #fff;
     overflow: hidden;
+    text-align: center;
 }
 
-.carousel-item {
+.hero3::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    background: inherit;
+    filter: blur(20px);
+    z-index: -1;
+    /* Ensure it stays behind the content */
     background-size: cover;
-    background-position: center;
-    transition: transform 1s ease-in-out;
+    /* To match the hero background size */
 }
+
+.hero3-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.hero3-content h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Animated Images */
+.hero3-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.animate_img {
+    position: absolute;
+    max-width: 45%;
+    opacity: 0;
+    animation: fadeInRotate 5s infinite;
+}
+
+/* Individual Animations */
+.img_1 {
+    top: 20%;
+    left: 10%;
+    animation-delay: 1s;
+}
+
+.img_2 {
+    top: 50%;
+    right: 10%;
+    animation-delay: 2s;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeInRotate {
+    0% {
+        transform: rotate(360deg) scale(1);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(0deg) scale(0.6);
+        opacity: 0;
+    }
+}
+
+
+/* hero 3 ============================= */
+.hero-3 {
+    position: relative;
+    background: url('../imgs/exterior/img50.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+    animation: slideInBounce 3s ease-out; /* Updated animation */
+}
+
+.hero-3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(20px);
+    z-index: -1; /* Ensure it stays behind the content */
+    background-size: cover; /* To match the hero background size */
+    opacity: 0.8; /* Slight opacity for a softer look */
+}
+
+.hero-3-content h1 {
+    font-size: 4rem; /* Slightly larger for better visibility */
+    margin-bottom: 15px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+}
+
+.hero-3-content h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Animated Images */
+.hero-3-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.Animate_img {
+    position: absolute;
+    max-width: 45%;
+    opacity: 0;
+    animation: fadeInScale 6s infinite ease-in-out; /* Updated animation */
+}
+
+/* Individual Animations */
+.Img_1 {
+    top: 20%;
+    left: 10%;
+    animation-delay: 1s;
+    animation-duration: 7s; /* Slower unique timing */
+}
+
+.Img_2 {
+    top: 50%;
+    right: 10%;
+    animation-delay: 2.5s;
+    animation-duration: 8s; /* Different timing for diversity */
+}
+
+/* Slide In and Bounce Animation */
+@keyframes slideInBounce {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(20%);
+        opacity: 1;
+    }
+    70% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+/* hero 5 ============================= */
+.hero-4 {
+    position: relative;
+    background: url('../imgs/exterior/img55.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+    animation: scaleIn 1.5s linear; /* Linear scale-in animation */
+}
+
+.hero-4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(10px) brightness(0.7); /* Soft blur effect with dimming */
+    z-index: -1; /* Ensure it stays behind the content */
+    background-size: cover; /* To match the hero background size */
+    opacity: 0.8;
+}
+
+.hero-4-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    animation: scaleIn 1.5s linear; /* Linear scale-in animation for header */
+}
+
+.hero-4-content h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    animation: scaleIn 1.5s linear 0.3s; /* Delayed linear scale-in animation for subtitle */
+}
+
+/* Animated Images */
+.hero-4-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.Animate_Img {
+    position: absolute;
+    max-width: 45%;
+    opacity: 0;
+    animation: fadeInMove 5s infinite;
+}
+
+/* Individual Animations */
+.Img_1 {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0.5s;
+}
+
+.Img_2 {
+    bottom: 25%;
+    right: 10%;
+    animation-delay: 1s;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeInMove {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translate(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+}
+
+
+
+
+

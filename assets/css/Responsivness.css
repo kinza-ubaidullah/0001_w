@@ -322,3 +322,154 @@
         margin: 0px 0;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries for Responsiveness of imgs */
+@media (max-width: 1024px) {
+    .hero1,
+    .hero3,
+    .hero-3,
+    .hero-4,
+    .hero {
+        height: 90vh;
+        text-align: center;
+    }
+    .hero1-content h1,
+    .hero3-content h1,
+    .hero-3-content h1,
+    .hero-4-content h1,
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    .hero1-content h2,
+    .hero3-content h2,
+    .hero-3-content h2,
+    .hero-4-content h2,
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    .animateImg,
+    .animate_img,
+    .Animate_img,
+    .Animate_Img,
+    .animate-img{
+        max-width: 40%;
+    }
+}
+@media (max-width: 767px) {
+    .hero1,
+    .hero3,
+    .hero-3,
+    .hero-4,
+    .hero {
+        height: 80vh;
+    }
+    .hero1-content h1,
+    .hero3-content h1,
+    .hero-3-content h1,
+    .hero-4-content h1,
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .hero1-content h2,
+    .hero3-content h2,
+    .hero-3-content h2,
+    .hero-4-content h2,
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+    .animateImg,
+    .animate_img,
+    .Animate_img,
+    .Animate_Img,
+    .animate-img {
+        max-width: 35%;
+    }
+    .img-1,
+    .img_1,
+    .Img_1,
+    .Img_1,
+    .img1 {
+        top: 30%;
+        left: 5%;
+    }
+    .img-2,
+    .img_2,
+    .Img_2,
+    .Img_2,
+    .img2 {
+        top: 60%;
+        right: 5%;
+    }
+}
+@media (max-width: 575px) {
+    .hero1,
+    .hero3,
+    .hero-3,
+    .hero-4,
+    .hero {
+        height: 70vh;
+        padding: 0 20px;
+    }
+    .hero1-content h1,
+    .hero3-content h1,
+    .hero-3-content h1,
+    .hero-4-content h1,
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    .hero1-content h2,
+    .hero3-content h2,
+    .hero-3-content h2,
+    .hero-4-content h2,
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+    .animateImg,
+    .animate_img,
+    .Animate_img,
+    .Animate_Img,
+    .animate-img{
+        max-width: 50%;
+    }
+    .img-1,
+    .img_1,
+    .Img_1,
+    .Img_1,
+    .img1 {
+        top: 40%;
+        left: 10%;
+    }
+    .img-2,
+    .img_2,
+    .Img_2,
+    .Img_2,
+    .img2 {
+        top: 70%;
+        right: 10%;
+    }
+}
+@media (max-width: 367px) {
+    .animateImg,
+    .animate_img,
+    .Animate_img,
+    .Animate_Img,
+    .animate-img {
+        max-width: 50%;
+    }
+}
