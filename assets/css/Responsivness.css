@@ -3,11 +3,13 @@
         max-width: 1140px !important;
     }
 }
+
 @media screen and (max-width: 992px) {
     .header .caption p {
         font-size: 11px;
     }
 }
+
 /* Navigation */
 @media screen and (max-width: 991px) {
     .navbar {
@@ -84,26 +86,33 @@
     .nav-scroll .navbar-collapse .active {
         color: #b19777 !important;
     }
+
     .bg-fixed {
         background-attachment: scroll !important;
     }
+
     .header {
         background-attachment: scroll !important;
         background-position: 50% 0% !important;
     }
+
     .hero-corner,
     .hero-corner2,
     .hero-corner3,
     .hero-corner4 {
         display: none;
     }
+
     .header .caption h1 {
         font-size: 40px;
     }
+
     .about p {
         font-size: 12px;
     }
+
 }
+
 /* for projects imgs */
 @media screen and (max-width: 336px) {
     .gallery_box {
@@ -112,34 +121,41 @@
         /* padding-top: 10px; */
     }
 }
+
 @media screen and (max-width: 358px) {
     .about h2 span {
         font-size: 24px;
     }
 }
+
 @media screen and (max-width: 300px) {
     .about h2 span {
         font-size: 20px;
     }
 }
+
 /* slider style */
 @media screen and (max-width: 767px) {
     .hero .intro h3 {
         font-size: 28px;
     }
+
     .hero .intro h4 {
         font-size: 20px;
     }
+
     .header .caption h1 {
         font-size: 30px;
         margin-bottom: 15px;
         letter-spacing: 10px;
         line-height: 1.35em;
     }
+
     .header .caption p {
         font-size: 15px;
         margin-right: 10px;
     }
+
     .header .caption .butn-light {
         margin-right: 10px;
     }
@@ -147,26 +163,32 @@
     .portfolio .filtering span {
         margin-bottom: 10px;
     }
+
     .bauen-blog .item .con h5,
     .bauen-blog .item .con h5 a {
         font-size: 20px;
     }
+
     .bauen-comment-section h3 span {
         margin-left: 0px;
     }
+
     .main-footer .sub-footer p.right {
         text-align: left;
     }
+
     .main-footer .abot .social-icon {
         text-align: left;
         margin-bottom: 15px;
     }
+
     .footer .logo {
         padding: 0;
         width: auto;
         margin: 0px 0;
     }
 }
+
 @media screen and (max-width: 768px) {
     .owl-nav {
         display: none;
@@ -201,12 +223,14 @@
     .left-panel {
         width: 50px;
     }
-    .testimonial-box{
+
+    .testimonial-box {
         padding: 35px 20px;
         margin-bottom: 90px;
     }
+
     /* careers */
-    .position{
+    .position {
         flex-direction: column;
         -webkit-box-pack: initial;
         -webkit-justify-content: initial;
@@ -221,23 +245,27 @@
         -ms-flex-align: start;
         align-items: flex-start;
     }
+
     .position-title {
         -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     }
+
     .position-location {
         margin-top: 15px;
         -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     }
+
     .position-time {
         margin-top: 15px;
         -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     }
+
     .position-icon {
         display: none;
     }
@@ -254,30 +282,38 @@
         margin-bottom: 10px;
     }
 }
+
 @media only screen and (max-width: 480px) {
     .team-details .content .info-list li {
         width: 100%;
     }
+
     .team-details .content .team-details-info {
         position: relative;
         padding: 0 0 8rem 0;
     }
+
     .section-head h4 {
         font-size: 30px;
     }
+
     .footer {
         padding: 60px 0;
     }
+
     .text-left {
         text-align: left;
     }
+
     .text-center {
         text-align: center;
     }
+
     .text-right {
         text-align: center;
     }
-    .header .caption p{
+
+    .header .caption p {
         font-size: 11px;
     }
 }
@@ -286,15 +322,18 @@
     .hero .intro h3 {
         font-size: 28px;
     }
+
     .hero .intro h4 {
         font-size: 20px;
     }
+
     .header .caption h1 {
         font-size: 30px;
         margin-bottom: 15px;
         letter-spacing: 10px;
         line-height: 1.35em;
     }
+
     .header .caption .butn-light {
         margin-right: 10px;
     }
@@ -302,20 +341,25 @@
     .portfolio .filtering span {
         margin-bottom: 10px;
     }
+
     .bauen-blog .item .con h5,
     .bauen-blog .item .con h5 a {
         font-size: 20px;
     }
+
     .bauen-comment-section h3 span {
         margin-left: 0px;
     }
+
     .main-footer .sub-footer p.right {
         text-align: left;
     }
+
     .main-footer .abot .social-icon {
         text-align: left;
         margin-bottom: 15px;
     }
+
     .footer .logo {
         padding: 0;
         width: auto;
@@ -340,7 +384,10 @@
 
 
 /* Media Queries for Responsiveness of imgs */
+
+
 @media (max-width: 1024px) {
+
     .hero1,
     .hero3,
     .hero-3,
@@ -349,6 +396,7 @@
         height: 90vh;
         text-align: center;
     }
+
     .hero1-content h1,
     .hero3-content h1,
     .hero-3-content h1,
@@ -356,6 +404,7 @@
     .hero-content h1 {
         font-size: 2.5rem;
     }
+
     .hero1-content h2,
     .hero3-content h2,
     .hero-3-content h2,
@@ -363,15 +412,83 @@
     .hero-content h2 {
         font-size: 1.8rem;
     }
+
     .animateImg,
     .animate_img,
     .Animate_img,
     .Animate_Img,
-    .animate-img{
+    .animate-img {
         max-width: 40%;
     }
+
+
+    /*===================== ANAXIES SECTION START  =========================*/
+    .hero-section .hero1,
+    .hero-section .hero3,
+    .hero-section .hero-3,
+    .hero-section .hero {
+        height: 90vh;
+        text-align: center;
+    }
+
+    .hero-section .hero1-content h1,
+    .hero-section .hero3-content h1,
+    .hero-section .hero-3-content h1,
+    .hero-section .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section .hero1-content h2,
+    .hero-section .hero3-content h2,
+    .hero-section .hero-3-content h2,
+    .hero-section .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section .animateImg,
+    .hero-section .animate_img,
+    .hero-section .Animate_img,
+    .hero-section .animate-img {
+        max-width: 40%;
+    }
+
+    /*===================== ANAXIES SECTION END ========================== */
+
+    /*===================== FarmHouse SECTION START  =========================*/
+    .hero--section .hero1,
+    .hero--section .hero3,
+    .hero--section .hero-3,
+    .hero-.hero--section-section .hero {
+        height: 90vh;
+        text-align: center;
+    }
+
+    .hero--section .hero1-content h1,
+    .hero--section .hero3-content h1,
+    .hero--section .hero-3-content h1,
+    .hero--section .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero--section .hero1-content h2,
+    .hero--section .hero3-content h2,
+    .hero--section .hero-3-content h2,
+    .hero--section .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero--section .animateImg,
+    .hero--section .animate_img,
+    .hero--section .Animate_img,
+    .hero--section .animate-img {
+        max-width: 40%;
+    }
+
+    /*===================== FarmHouse SECTION END ========================== */
 }
+
 @media (max-width: 767px) {
+
     .hero1,
     .hero3,
     .hero-3,
@@ -379,6 +496,7 @@
     .hero {
         height: 80vh;
     }
+
     .hero1-content h1,
     .hero3-content h1,
     .hero-3-content h1,
@@ -386,6 +504,7 @@
     .hero-content h1 {
         font-size: 2rem;
     }
+
     .hero1-content h2,
     .hero3-content h2,
     .hero-3-content h2,
@@ -393,6 +512,7 @@
     .hero-content h2 {
         font-size: 1.5rem;
     }
+
     .animateImg,
     .animate_img,
     .Animate_img,
@@ -400,6 +520,7 @@
     .animate-img {
         max-width: 35%;
     }
+
     .img-1,
     .img_1,
     .Img_1,
@@ -408,6 +529,7 @@
         top: 30%;
         left: 5%;
     }
+
     .img-2,
     .img_2,
     .Img_2,
@@ -416,8 +538,108 @@
         top: 60%;
         right: 5%;
     }
+
+    /* =========================ANAXIES SECTION START ============================== */
+    .hero-section .hero1,
+    .hero-section .hero3,
+    .hero-section .hero-3,
+    .hero-section .hero {
+        height: 80vh;
+    }
+
+    .hero-section .hero1-content h1,
+    .hero-section .hero3-content h1,
+    .hero-section .hero-3-content h1,
+    .hero-section .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section .hero1-content h2,
+    .hero-section .hero3-content h2,
+    .hero-section .hero-3-content h2,
+    .hero-section .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-section .animateImg,
+    .hero-section .animate_img,
+    .hero-section .Animate_img,
+    .hero-section .animate-img {
+        max-width: 35%;
+    }
+
+    .hero-section .img-1,
+    .hero-section .img_1,
+    .hero-section .Img_1,
+    .hero-section .Img_1,
+    .hero-section .img1 {
+        top: 30%;
+        left: 5%;
+    }
+
+    .hero-section .img-2,
+    .hero-section .img_2,
+    .hero-section .Img_2,
+    .hero-section .Img_2,
+    .hero-section .img2 {
+        top: 60%;
+        right: 5%;
+    }
+
+    /*===================== ANAXIES SECTION END ==================================*/
+
+    /* =========================FARMHOYSE SECTION START ============================== */
+    .hero--section .hero1,
+    .hero--section .hero3,
+    .hero--section .hero-3,
+    .hero--section .hero {
+        height: 80vh;
+    }
+
+    .hero--section .hero1-content h1,
+    .hero--section .hero3-content h1,
+    .hero--section .hero-3-content h1,
+    .hero--section .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero--section .hero1-content h2,
+    .hero--section .hero3-content h2,
+    .hero--section .hero-3-content h2,
+    .hero--section .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero--section .animateImg,
+    .hero--section .animate_img,
+    .hero--section .Animate_img,
+    .hero--section .animate-img {
+        max-width: 35%;
+    }
+
+    .hero--section .img-1,
+    .hero--section .img_1,
+    .hero--section .Img_1,
+    .hero--section .Img_1,
+    .hero--section .img1 {
+        top: 30%;
+        left: 5%;
+    }
+
+    .hero--section .img-2,
+    .hero--section .img_2,
+    .hero--section .Img_2,
+    .hero--section .Img_2,
+    .hero--section .img2 {
+        top: 60%;
+        right: 5%;
+    }
+
+    /*===================== FARMHOUSE SECTION END ==================================*/
 }
+
 @media (max-width: 575px) {
+
     .hero1,
     .hero3,
     .hero-3,
@@ -426,6 +648,7 @@
         height: 70vh;
         padding: 0 20px;
     }
+
     .hero1-content h1,
     .hero3-content h1,
     .hero-3-content h1,
@@ -433,6 +656,7 @@
     .hero-content h1 {
         font-size: 1.8rem;
     }
+
     .hero1-content h2,
     .hero3-content h2,
     .hero-3-content h2,
@@ -440,13 +664,15 @@
     .hero-content h2 {
         font-size: 1.2rem;
     }
+
     .animateImg,
     .animate_img,
     .Animate_img,
     .Animate_Img,
-    .animate-img{
+    .animate-img {
         max-width: 50%;
     }
+
     .img-1,
     .img_1,
     .Img_1,
@@ -455,6 +681,7 @@
         top: 40%;
         left: 10%;
     }
+
     .img-2,
     .img_2,
     .Img_2,
@@ -463,8 +690,110 @@
         top: 70%;
         right: 10%;
     }
+
+    /* ANAXIES SECTION START  */
+    .hero-section .hero1,
+    .hero-section .hero3,
+    .hero-section .hero-3,
+    .hero-section .hero {
+        height: 70vh;
+        padding: 0 20px;
+    }
+
+    .hero-section .hero1-content h1,
+    .hero-section .hero3-content h1,
+    .hero-section .hero-3-content h1,
+    .hero-section .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section .hero1-content h2,
+    .hero-section .hero3-content h2,
+    .hero-section .hero-3-content h2,
+    .hero-section .hero-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero-section .animateImg,
+    .hero-section .animate_img,
+    .hero-section .Animate_img,
+    .hero-section .animate-img {
+        max-width: 50%;
+    }
+
+    .hero-section .img-1,
+    .hero-section .img_1,
+    .hero-section .Img_1,
+    .hero-section .Img_1,
+    .hero-section .img1 {
+        top: 40%;
+        left: 10%;
+    }
+
+    .hero-section .img-2,
+    .hero-section .img_2,
+    .hero-section .Img_2,
+    .hero-section .Img_2,
+    .hero-section .img2 {
+        top: 70%;
+        right: 10%;
+    }
+
+    /* ANAXIES SECTION END */
+
+    /* FARMHOUSE SECTION START  */
+    .hero--section .hero1,
+    .hero--section .hero3,
+    .hero--section .hero-3,
+    .hero--section .hero {
+        height: 70vh;
+        padding: 0 20px;
+    }
+
+    .hero--section .hero1-content h1,
+    .hero--section .hero3-content h1,
+    .hero--section .hero-3-content h1,
+    .hero--section .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero--section .hero1-content h2,
+    .hero--section .hero3-content h2,
+    .hero--section .hero-3-content h2,
+    .hero--section .hero-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero--section .animateImg,
+    .hero--section .animate_img,
+    .hero--section .Animate_img,
+    .hero--section .animate-img {
+        max-width: 50%;
+    }
+
+    .hero--section .img-1,
+    .hero--section .img_1,
+    .hero--section .Img_1,
+    .hero--section .Img_1,
+    .hero--section .img1 {
+        top: 40%;
+        left: 10%;
+    }
+
+    .hero--section .img-2,
+    .hero--section .img_2,
+    .hero--section .Img_2,
+    .hero--section .Img_2,
+    .hero--section .img2 {
+        top: 70%;
+        right: 10%;
+    }
+
+    /* FARMHOUSE SECTION END */
 }
+
 @media (max-width: 367px) {
+
     .animateImg,
     .animate_img,
     .Animate_img,
@@ -472,4 +801,24 @@
     .animate-img {
         max-width: 50%;
     }
+
+    /* ANAXIES SECTION  */
+    .hero-section .animateImg,
+    .hero-section .animate_img,
+    .hero-section .Animate_img,
+    .hero-section .animate-img {
+        max-width: 50%;
+    }
+
+    /* ANAXIES SECTION  */
+
+    /* FARMHOUSE SECTION  */
+    .hero--section .animateImg,
+    .hero--section .animate_img,
+    .hero--section .Animate_img,
+    .hero--section .animate-img {
+        max-width: 50%;
+    }
+
+    /* FARMHOUSE SECTION  */
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 /* General Reset */
 * {
@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: "Lobster", serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.75em;
@@ -28,7 +28,8 @@ body {
 }
 
 .navbar .logo {
-    font-size: 22px;
+    /* font-size: 22px; */
+    width: 30%;
     font-weight: 700;
 }
 
@@ -36,7 +37,33 @@ body {
     list-style: none;
     display: flex;
     gap: 20px;
-    padding-left: 18rem;
+    justify-content: space-evenly;
+}
+
+.menu .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #444;
+    padding: 10px 0;
+    list-style: none;
+    display: none;
+}
+
+.menu .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.menu .dropdown-menu a {
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.menu .dropdown-menu a:hover {
+    background-color: #555;
+    /* padding: 5px 2px; */
 }
 
 .menu li {
@@ -48,6 +75,7 @@ body {
     color: #fff;
     font-weight: 500;
     transition: color 0.3s;
+    padding-left: 10px;
 }
 
 .menu a:hover {
@@ -65,7 +93,28 @@ body {
     color: #b19777;
 }
 
+@media (max-width: 576px) {
+    img {
+        width: 80%;
+    }
+    .menu a {
+        font-size: xx-large;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: xx-large;
+    }
+
+    .social-icons a {
+        font-weight: 400;
+        margin-top: 37px;
+        font-size: 35px;
+    }
+}
+
+
 /* Hero Section */
+/*============================ exterior styling start ==================================== */
 .hero {
     position: relative;
     background: url('../imgs/exterior/img45.jpeg') no-repeat center center/cover;
@@ -366,7 +415,8 @@ body {
     color: #fff;
     overflow: hidden;
     text-align: center;
-    animation: slideInBounce 3s ease-out; /* Updated animation */
+    animation: slideInBounce 3s ease-out;
+    /* Updated animation */
 }
 
 .hero-3::before {
@@ -378,13 +428,17 @@ body {
     height: 100%;
     background: inherit;
     filter: blur(20px);
-    z-index: -1; /* Ensure it stays behind the content */
-    background-size: cover; /* To match the hero background size */
-    opacity: 0.8; /* Slight opacity for a softer look */
+    z-index: -1;
+    /* Ensure it stays behind the content */
+    background-size: cover;
+    /* To match the hero background size */
+    opacity: 0.8;
+    /* Slight opacity for a softer look */
 }
 
 .hero-3-content h1 {
-    font-size: 4rem; /* Slightly larger for better visibility */
+    font-size: 4rem;
+    /* Slightly larger for better visibility */
     margin-bottom: 15px;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
 }
@@ -414,7 +468,8 @@ body {
     position: absolute;
     max-width: 45%;
     opacity: 0;
-    animation: fadeInScale 6s infinite ease-in-out; /* Updated animation */
+    animation: fadeInScale 6s infinite ease-in-out;
+    /* Updated animation */
 }
 
 /* Individual Animations */
@@ -422,14 +477,16 @@ body {
     top: 20%;
     left: 10%;
     animation-delay: 1s;
-    animation-duration: 7s; /* Slower unique timing */
+    animation-duration: 7s;
+    /* Slower unique timing */
 }
 
 .Img_2 {
     top: 50%;
     right: 10%;
     animation-delay: 2.5s;
-    animation-duration: 8s; /* Different timing for diversity */
+    animation-duration: 8s;
+    /* Different timing for diversity */
 }
 
 /* Slide In and Bounce Animation */
@@ -438,17 +495,21 @@ body {
         transform: translateX(-100%);
         opacity: 0;
     }
+
     50% {
         transform: translateX(20%);
         opacity: 1;
     }
+
     70% {
         transform: translateX(-10%);
     }
+
     100% {
         transform: translateX(0);
     }
 }
+
 /* hero 5 ============================= */
 .hero-4 {
     position: relative;
@@ -461,7 +522,8 @@ body {
     color: #fff;
     overflow: hidden;
     text-align: center;
-    animation: scaleIn 1.5s linear; /* Linear scale-in animation */
+    animation: scaleIn 1.5s linear;
+    /* Linear scale-in animation */
 }
 
 .hero-4::before {
@@ -472,9 +534,12 @@ body {
     width: 100%;
     height: 100%;
     background: inherit;
-    filter: blur(10px) brightness(0.7); /* Soft blur effect with dimming */
-    z-index: -1; /* Ensure it stays behind the content */
-    background-size: cover; /* To match the hero background size */
+    filter: blur(10px) brightness(0.7);
+    /* Soft blur effect with dimming */
+    z-index: -1;
+    /* Ensure it stays behind the content */
+    background-size: cover;
+    /* To match the hero background size */
     opacity: 0.8;
 }
 
@@ -482,7 +547,8 @@ body {
     font-size: 4rem;
     margin-bottom: 20px;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
-    animation: scaleIn 1.5s linear; /* Linear scale-in animation for header */
+    animation: scaleIn 1.5s linear;
+    /* Linear scale-in animation for header */
 }
 
 .hero-4-content h2 {
@@ -490,7 +556,8 @@ body {
     text-transform: uppercase;
     letter-spacing: 4px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-    animation: scaleIn 1.5s linear 0.3s; /* Delayed linear scale-in animation for subtitle */
+    animation: scaleIn 1.5s linear 0.3s;
+    /* Delayed linear scale-in animation for subtitle */
 }
 
 /* Animated Images */
@@ -545,7 +612,1282 @@ body {
     }
 }
 
+/*========================= Exterior styling end ============================= */
+
+
+
+/* =====================INTERIOR DESIGNS CSS STYLING start=====================  */
+/* =====================General Styles start===================== */
+body {
+    font-family: "Lobster", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181818;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-bottom: 2px solid #444;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #f4f4f4;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+
+/*===================== General layout styling end=====================*/
+.zigzag-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.zigzag-item {
+    position: relative;
+    width: calc(50% - 10px);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    /* Default border */
+}
+
+/* Bold hover effects */
+.zigzag-item:hover {
+    transform: scale(1.1);
+    /* Dramatic zoom */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    border-color: #ff5733;
+    /* Glowing border color */
+}
+
+/* Glow effect */
+.zigzag-item:hover {
+    box-shadow: 0 0 15px #ff5733, 0 0 30px #ff5733;
+}
+
+.zigzag-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+    filter: brightness(0.8);
+}
+
+/* Brighten image on hover */
+.zigzag-item:hover img {
+    transform: scale(1.2);
+    /* Dramatic zoom */
+    filter: brightness(1);
+}
+
+/* Overlay text styling */
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffda79;
+    /* Vibrant text color */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    transform: translateY(100%);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Show overlay text on hover */
+.zigzag-item:hover .text-overlay {
+    transform: translateY(0);
+    color: #ffffff;
+    /* Bright text color on hover */
+}
+
+/*========================== INTERIOR DESIGNS CSS STYLING end==========================  */
+
+/*============================ COMMERCIAL DESIGNS CSS STYLING start============================  */
+.background-container {
+    position: relative;
+    background: url('../imgs/comm/p19.jpg') no-repeat center center/cover;
+    height: 100vh;
+    overflow: hidden;
+    filter: brightness(50%);
+    /* Dull the background */
+}
+
+/* Floating Images Container */
+.floating-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.floating-images .animate-img {
+    position: absolute;
+    max-width: 50%;
+    /* Increased image size */
+    opacity: 0;
+    animation: fadeInMove 5s infinite;
+}
+
+/* Individual Image Positions */
+.floating-images .img1 {
+    top: 10%;
+    left: 15%;
+    animation-delay: 0s;
+}
+
+.floating-images .img2 {
+    bottom: 10%;
+    right: 5%;
+    animation-delay: 1.5s;
+}
+
+/* Keyframes for Fade-In Move */
+@keyframes fadeInMove {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+}
+
+/* 2ng bg  */
+.image-background {
+    position: relative;
+    background: url('../imgs/comm/WhatsApp\ Image\ 2024-11-01\ at\ 3.13.35\ PM.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    overflow: hidden;
+    filter: brightness(50%);
+    /* Dull the background */
+}
+
+/* Animated Images Container */
+.animated-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+/* Individual Animated Images */
+.animated-image {
+    position: absolute;
+    max-width: 30%;
+    /* Increased image size */
+    opacity: 0;
+    animation: bounceIn 6s infinite;
+}
+
+/* Specific Image Positions */
+.animated-image.bounce-image-1 {
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.animated-image.bounce-image-2 {
+    bottom: 15%;
+    right: 25%;
+    animation-delay: 1.5s;
+}
+
+/* Keyframes for Bounce In Animation */
+@keyframes bounceIn {
+    0% {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+
+    80% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* 3rd  */
+.background-wrapper {
+    position: relative;
+    background: url('../imgs/comm/AIC\ E\ 01.jpg') no-repeat center center/cover;
+    height: 100vh;
+    overflow: hidden;
+    filter: brightness(50%);
+    /* Dull the background */
+}
+
+/* Image Animation Container */
+.image-animation-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+/* Individual Animated Images */
+.image-animation-container .animated-image {
+    position: absolute;
+    max-width: 50%;
+    /* Increased image size */
+    opacity: 0;
+    animation: slideInLeft 6s infinite;
+}
+
+/* Specific Image Positions */
+.image-animation-container .animated-image.slide-in-left-1 {
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.image-animation-container .animated-image.slide-in-left-2 {
+    bottom: 10%;
+    right: 15%;
+    animation-delay: 1.5s;
+}
+
+/* Keyframes for Slide-In Left Animation */
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-20px);
+        opacity: 1;
+    }
+}
+
+/* 4th  */
+
+.bg-wrapper {
+    position: relative;
+    background: url('../imgs/comm/A1.jpg') no-repeat center center/cover;
+    height: 100vh;
+    overflow: hidden;
+    filter: brightness(50%);
+    /* Dull the background */
+}
+
+/* Images Wrapper */
+.bg-wrapper .images-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+/* Individual Floating Images */
+.bg-wrapper .floating-image {
+    position: absolute;
+    max-width: 40%;
+    /* Increased image size */
+    opacity: 0;
+    animation: rotateIn 6s infinite;
+}
+
+/* Specific Image Animations */
+.bg-wrapper .floating-image.rotate-1 {
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.bg-wrapper .floating-image.rotate-2 {
+    bottom: 15%;
+    right: 25%;
+    animation-delay: 1.5s;
+}
+
+/* Keyframes for Rotate-In Animation */
+@keyframes rotateIn {
+    0% {
+        transform: rotate(-180deg);
+        opacity: 0;
+    }
+
+    50% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+/* 5th */
+.img-container {
+    position: relative;
+    background: url('../imgs/comm/r2.jpg') no-repeat center center/cover;
+    height: 100vh;
+    overflow: hidden;
+    filter: brightness(50%);
+    /* Dull the background */
+}
+
+/* Image Animation Wrapper */
+.image-animation-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+/* Individual Floating Images */
+.zoom-image {
+    position: absolute;
+    max-width: 50%;
+    /* Increased image size */
+    opacity: 0;
+    animation: zoomEffect 6s infinite;
+}
+
+/* Specific Image Animations */
+.zoom-image.animation-1 {
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.zoom-image.animation-2 {
+    bottom: 10%;
+    right: 15%;
+    animation-delay: 1.5s;
+}
+
+/* Keyframes for Zoom-In Animation */
+@keyframes zoomEffect {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+}
+
+/*=========================== COMMERCIAL DESIGNS CSS STYLING end===========================  */
+
+
+/*======================== COMMERCIAL INTERIOR DESIGN start========================  */
+.gallery-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery-item {
+    position: relative;
+    width: calc(50% - 10px);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    /* Default border */
+}
+
+/* Bold hover effects */
+.gallery-item:hover {
+    transform: scale(1.1);
+    /* Dramatic zoom */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    border-color: #ff5733;
+    /* Glowing border color */
+}
+
+/* Glow effect */
+.gallery-item:hover {
+    box-shadow: 0 0 15px #ff5733, 0 0 30px #ff5733;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+    filter: brightness(0.8);
+}
+
+/* Brighten image on hover */
+.gallery-item:hover img {
+    transform: scale(1.2);
+    /* Dramatic zoom */
+    filter: brightness(1);
+}
+
+/*===================== COMMERCIAL INTERIOR DESIGN end=====================  */
+
+
+
+/*======================= Anaxies section start=======================  */
+.hero-section .hero {
+    position: relative;
+    background: url('../imgs/anaxies/06.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero-section .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(20px);
+    z-index: -1;
+    /* Ensure it stays behind the content */
+    background-size: cover;
+    /* To match the hero background size */
+}
+
+.hero-section .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.hero-section .hero-content h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Animated Images */
+.hero-section .hero-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.hero-section .animate-img {
+    position: absolute;
+    max-width: 45%;
+    opacity: 0;
+    animation: fadeInMove 5s infinite;
+}
+
+/* Individual Animations */
+.hero-section .img1 {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.hero-section .img2 {
+    top: 50%;
+    right: 10%;
+    animation-delay: 1.5s;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeInMove {
+    0% {
+        transform: translate(30px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+}
 
 
 
 
+/* HERO1================================================================= */
+.hero-section .hero1 {
+    position: relative;
+    background: url('../imgs/anaxies/3.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* animation: fadeInRotate 4s infinite; */
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero-section .hero1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(20px);
+    z-index: -1;
+    /* Ensure it stays behind the content */
+    background-size: cover;
+    /* To match the hero background size */
+}
+
+.hero-section .hero1-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.hero-section .hero1-content h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Animated Images */
+.hero-section .hero1-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.hero-section .animateImg {
+    position: absolute;
+    max-width: 45%;
+    opacity: 0;
+    animation: fadeInScale 5s infinite;
+}
+
+/* Individual Animations */
+.hero-section .img-1 {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.hero-section .img-2 {
+    top: 50%;
+    right: 10%;
+    animation-delay: 1.5s;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeInScale {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+
+/* hero 3 ============================= */
+.hero-section .hero3 {
+    position: relative;
+    background: url('../imgs/anaxies/5.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* animation: fadeInRotate 4s infinite; */
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero-section .hero3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(20px);
+    z-index: -1;
+    /* Ensure it stays behind the content */
+    background-size: cover;
+    /* To match the hero background size */
+}
+
+.hero-section .hero3-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.hero-section .hero3-content h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Animated Images */
+.hero-section .hero3-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.hero-section .animate_img {
+    position: absolute;
+    max-width: 45%;
+    opacity: 0;
+    animation: fadeInRotate 5s infinite;
+}
+
+/* Individual Animations */
+.hero-section .img_1 {
+    top: 20%;
+    left: 10%;
+    animation-delay: 1s;
+}
+
+.hero-section .img_2 {
+    top: 50%;
+    right: 10%;
+    animation-delay: 2s;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeInRotate {
+    0% {
+        transform: rotate(360deg) scale(1);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(0deg) scale(0.6);
+        opacity: 0;
+    }
+}
+
+
+/* hero 3 ============================= */
+.hero-section .hero-3 {
+    position: relative;
+    background: url('../imgs/anaxies/WhatsApp\ Image\ 2025-01-01\ at\ 11.31.19\ PM.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+    animation: slideInBounce 3s ease-out;
+    /* Updated animation */
+}
+
+.hero-section .hero-3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(20px);
+    z-index: -1;
+    /* Ensure it stays behind the content */
+    background-size: cover;
+    /* To match the hero background size */
+    opacity: 0.8;
+    /* Slight opacity for a softer look */
+}
+
+.hero-section .hero-3-content h1 {
+    font-size: 4rem;
+    /* Slightly larger for better visibility */
+    margin-bottom: 15px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+}
+
+.hero-section .hero-3-content h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Animated Images */
+.hero-section .hero-3-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.hero-section .Animate_img {
+    position: absolute;
+    max-width: 45%;
+    opacity: 0;
+    animation: fadeInScale 6s infinite ease-in-out;
+    /* Updated animation */
+}
+
+/* Individual Animations */
+.hero-section .Img_1 {
+    top: 20%;
+    left: 10%;
+    animation-delay: 1s;
+    animation-duration: 7s;
+    /* Slower unique timing */
+}
+
+.hero-section .Img_2 {
+    top: 50%;
+    right: 10%;
+    animation-delay: 2.5s;
+    animation-duration: 8s;
+    /* Different timing for diversity */
+}
+
+/* Slide In and Bounce Animation */
+@keyframes slideInBounce {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(20%);
+        opacity: 1;
+    }
+
+    70% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*======================= Anaxies section end======================= */
+
+
+
+/*======================= fARMHOUSE section start=======================  */
+.hero--section .hero {
+    position: relative;
+    background: url('../imgs/farmHouse/10.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero--section .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(20px);
+    z-index: -1;
+    /* Ensure it stays behind the content */
+    background-size: cover;
+    /* To match the hero background size */
+}
+
+.hero--section .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.hero--section .hero-content h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Animated Images */
+.hero--section .hero-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.hero--section .animate-img {
+    position: absolute;
+    max-width: 45%;
+    opacity: 0;
+    animation: fadeInMove 5s infinite;
+}
+
+/* Individual Animations */
+.hero--section .img1 {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.hero--section .img2 {
+    top: 50%;
+    right: 10%;
+    animation-delay: 1.5s;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeInMove {
+    0% {
+        transform: translate(30px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+}
+
+
+
+
+/* HERO1================================================================= */
+.hero--section .hero1 {
+    position: relative;
+    background: url('../imgs/farmHouse/Test\ Render\ 03.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* animation: fadeInRotate 4s infinite; */
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero--section .hero1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(20px);
+    z-index: -1;
+    /* Ensure it stays behind the content */
+    background-size: cover;
+    /* To match the hero background size */
+}
+
+.hero--section .hero1-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.hero--section .hero1-content h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Animated Images */
+.hero--section .hero1-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.hero--section .animateImg {
+    position: absolute;
+    max-width: 45%;
+    opacity: 0;
+    animation: fadeInScale 5s infinite;
+}
+
+/* Individual Animations */
+.hero--section .img-1 {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.hero--section .img-2 {
+    top: 50%;
+    right: 10%;
+    animation-delay: 1.5s;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeInScale {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+
+/* hero 3 ============================= */
+.hero--section .hero3 {
+    position: relative;
+    background: url('../imgs/farmHouse/WhatsApp\ Image\ 2025-01-04\ at\ 10.46.34\ AM.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* animation: fadeInRotate 4s infinite; */
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero--section .hero3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(20px);
+    z-index: -1;
+    /* Ensure it stays behind the content */
+    background-size: cover;
+    /* To match the hero background size */
+}
+
+.hero--section .hero3-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.hero--section .hero3-content h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Animated Images */
+.hero--section .hero3-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.hero--section .animate_img {
+    position: absolute;
+    max-width: 45%;
+    opacity: 0;
+    animation: fadeInRotate 5s infinite;
+}
+
+/* Individual Animations */
+.hero--section .img_1 {
+    top: 20%;
+    left: 10%;
+    animation-delay: 1s;
+}
+
+.hero--section .img_2 {
+    top: 50%;
+    right: 10%;
+    animation-delay: 2s;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeInRotate {
+    0% {
+        transform: rotate(360deg) scale(1);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(0deg) scale(0.6);
+        opacity: 0;
+    }
+}
+
+
+/* hero 3 ============================= */
+.hero--section .hero-3 {
+    position: relative;
+    background: url('../imgs/farmHouse/WhatsApp\ Image\ 2025-01-04\ at\ 10.41.14\ AM\ \(1\).jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+    animation: slideInBounce 3s ease-out;
+    /* Updated animation */
+}
+
+.hero--section .hero-3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(20px);
+    z-index: -1;
+    /* Ensure it stays behind the content */
+    background-size: cover;
+    /* To match the hero background size */
+    opacity: 0.8;
+    /* Slight opacity for a softer look */
+}
+
+.hero--section .hero-3-content h1 {
+    font-size: 4rem;
+    /* Slightly larger for better visibility */
+    margin-bottom: 15px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+}
+
+.hero--section .hero-3-content h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Animated Images */
+.hero--section .hero-3-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.hero--section .Animate_img {
+    position: absolute;
+    max-width: 45%;
+    opacity: 0;
+    animation: fadeInScale 6s infinite ease-in-out;
+    /* Updated animation */
+}
+
+/* Individual Animations */
+.hero--section .Img_1 {
+    top: 20%;
+    left: 10%;
+    animation-delay: 1s;
+    animation-duration: 7s;
+    /* Slower unique timing */
+}
+
+.hero--section .Img_2 {
+    top: 50%;
+    right: 10%;
+    animation-delay: 2.5s;
+    animation-duration: 8s;
+    /* Different timing for diversity */
+}
+
+/* Slide In and Bounce Animation */
+@keyframes slideInBounce {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(20%);
+        opacity: 1;
+    }
+
+    70% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*======================= FarmHOUSE section end======================= */
